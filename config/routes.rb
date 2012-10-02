@@ -7,6 +7,6 @@ Jasminerice::Engine.routes.draw do
   root :to => "spec#index"
 end
 
-Rails.application.routes.draw do
+Rails.application.routes.prepend do
   mount Jasminerice::Engine => "/jasmine"
 end
